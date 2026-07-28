@@ -20,30 +20,53 @@ jobs:
       - name: Create generated directory
         run: mkdir -p assets/generated
 
+      - name: Define safe fetch helper
+        run: |
+          cat <<'SCRIPT' > fetch_svg.sh
+          #!/usr/bin/env bash
+          # Only overwrites dest if the fetch actually returned SVG/XML —
+          # third-party card services (vercel-hosted) occasionally return
+          # plain-text errors (402/503/etc) with HTTP 200-ish bodies; we'd
+          # rather keep the last known-good card than clobber it with junk.
+          set -uo pipefail
+          url="$1"; dest="$2"
+          tmp="$(mktemp)"
+          if curl -sL --max-time 20 "$url" -o "$tmp" && head -c 200 "$tmp" | grep -qi '<svg\|<?xml'; then
+            mv "$tmp" "$dest"
+          else
+            echo "::warning::fetch failed or returned non-SVG content for $dest — keeping previous version"
+            rm -f "$tmp"
+          fi
+          SCRIPT
+          chmod +x fetch_svg.sh
+
       - name: Fetch stats card (light + dark)
         run: |
-          curl -sL "https://github-readme-stats.vercel.app/api?username=MohammedYessineKraiem&show_icons=true&count_private=true&include_all_commits=true&bg_color=00000000&title_color=540303&text_color=0A0000&icon_color=4d0b16&border_color=4d0a0a&hide_border=false&rank_icon=github&cache_seconds=1800" -o assets/generated/stats-light.svg || true
-          curl -sL "https://github-readme-stats.vercel.app/api?username=MohammedYessineKraiem&show_icons=true&count_private=true&include_all_commits=true&bg_color=00000000&title_color=e0334a&text_color=EDE4DE&icon_color=e0334a&border_color=6b1a1a&hide_border=false&rank_icon=github&cache_seconds=1800" -o assets/generated/stats-dark.svg || true
+          ./fetch_svg.sh "https://github-readme-stats.vercel.app/api?username=MohammedYessineKraiem&show_icons=true&count_private=true&include_all_commits=true&bg_color=00000000&title_color=540303&text_color=0A0000&icon_color=4d0b16&border_color=4d0a0a&hide_border=false&rank_icon=github&cache_seconds=1800" assets/generated/stats-light.svg
+          ./fetch_svg.sh "https://github-readme-stats.vercel.app/api?username=MohammedYessineKraiem&show_icons=true&count_private=true&include_all_commits=true&bg_color=00000000&title_color=e0334a&text_color=EDE4DE&icon_color=e0334a&border_color=6b1a1a&hide_border=false&rank_icon=github&cache_seconds=1800" assets/generated/stats-dark.svg
 
       - name: Fetch top-langs card (light + dark)
         run: |
-          curl -sL "https://github-readme-stats.vercel.app/api/top-langs/?username=MohammedYessineKraiem&layout=compact&count_private=true&bg_color=00000000&title_color=540303&text_color=0A0000&icon_color=4d0b16&border_color=4d0a0a&hide_border=false&langs_count=8&cache_seconds=1800" -o assets/generated/top-langs-light.svg || true
-          curl -sL "https://github-readme-stats.vercel.app/api/top-langs/?username=MohammedYessineKraiem&layout=compact&count_private=true&bg_color=00000000&title_color=e0334a&text_color=EDE4DE&icon_color=e0334a&border_color=6b1a1a&hide_border=false&langs_count=8&cache_seconds=1800" -o assets/generated/top-langs-dark.svg || true
+          ./fetch_svg.sh "https://github-readme-stats.vercel.app/api/top-langs/?username=MohammedYessineKraiem&layout=compact&count_private=true&bg_color=00000000&title_color=540303&text_color=0A0000&icon_color=4d0b16&border_color=4d0a0a&hide_border=false&langs_count=8&cache_seconds=1800" assets/generated/top-langs-light.svg
+          ./fetch_svg.sh "https://github-readme-stats.vercel.app/api/top-langs/?username=MohammedYessineKraiem&layout=compact&count_private=true&bg_color=00000000&title_color=e0334a&text_color=EDE4DE&icon_color=e0334a&border_color=6b1a1a&hide_border=false&langs_count=8&cache_seconds=1800" assets/generated/top-langs-dark.svg
 
       - name: Fetch activity graph (light + dark)
         run: |
-          curl -sL "https://github-readme-activity-graph.vercel.app/graph?username=MohammedYessineKraiem&bg_color=00000000&color=540303&line=540303&point=4d0b16&area_color=451c1c&area=true&hide_border=true&custom_title=CONTRIBUTION%20TELEMETRY" -o assets/generated/activity-graph-light.svg || true
-          curl -sL "https://github-readme-activity-graph.vercel.app/graph?username=MohammedYessineKraiem&bg_color=00000000&color=e0334a&line=e0334a&point=c23b4a&area_color=6b1a1a&area=true&hide_border=true&custom_title=CONTRIBUTION%20TELEMETRY" -o assets/generated/activity-graph-dark.svg || true
+          ./fetch_svg.sh "https://github-readme-activity-graph.vercel.app/graph?username=MohammedYessineKraiem&bg_color=00000000&color=540303&line=540303&point=4d0b16&area_color=451c1c&area=true&hide_border=true&custom_title=CONTRIBUTION%20TELEMETRY" assets/generated/activity-graph-light.svg
+          ./fetch_svg.sh "https://github-readme-activity-graph.vercel.app/graph?username=MohammedYessineKraiem&bg_color=00000000&color=e0334a&line=e0334a&point=c23b4a&area_color=6b1a1a&area=true&hide_border=true&custom_title=CONTRIBUTION%20TELEMETRY" assets/generated/activity-graph-dark.svg
 
       - name: Fetch streak stats (light + dark)
         run: |
-          curl -sL "https://streak-stats.demolab.com?user=MohammedYessineKraiem&background=00000000&border=4d0a0a&stroke=4d0a0a&ring=540303&fire=4d0b16&currStreakLabel=540303&sideLabels=451c1c&dates=451c1c&currStreakNum=0A0000&sideNums=0A0000&hide_border=true" -o assets/generated/streak-light.svg || true
-          curl -sL "https://streak-stats.demolab.com?user=MohammedYessineKraiem&background=00000000&border=6b1a1a&stroke=6b1a1a&ring=e0334a&fire=e0334a&currStreakLabel=e0334a&sideLabels=7a3a3a&dates=7a3a3a&currStreakNum=EDE4DE&sideNums=EDE4DE&hide_border=true" -o assets/generated/streak-dark.svg || true
+          ./fetch_svg.sh "https://streak-stats.demolab.com?user=MohammedYessineKraiem&background=00000000&border=4d0a0a&stroke=4d0a0a&ring=540303&fire=4d0b16&currStreakLabel=540303&sideLabels=451c1c&dates=451c1c&currStreakNum=0A0000&sideNums=0A0000&hide_border=true" assets/generated/streak-light.svg
+          ./fetch_svg.sh "https://streak-stats.demolab.com?user=MohammedYessineKraiem&background=00000000&border=6b1a1a&stroke=6b1a1a&ring=e0334a&fire=e0334a&currStreakLabel=e0334a&sideLabels=7a3a3a&dates=7a3a3a&currStreakNum=EDE4DE&sideNums=EDE4DE&hide_border=true" assets/generated/streak-dark.svg
 
       - name: Fetch trophy card (light + dark)
         run: |
-          curl -sL "https://github-profile-trophy.vercel.app/?username=MohammedYessineKraiem&theme=flat&no-bg=true&margin-w=8&margin-h=8&column=4" -o assets/generated/trophy-light.svg || true
-          curl -sL "https://github-profile-trophy.vercel.app/?username=MohammedYessineKraiem&theme=onedark&no-bg=true&margin-w=8&margin-h=8&column=4" -o assets/generated/trophy-dark.svg || true
+          ./fetch_svg.sh "https://github-profile-trophy.vercel.app/?username=MohammedYessineKraiem&theme=flat&no-bg=true&margin-w=8&margin-h=8&column=4" assets/generated/trophy-light.svg
+          ./fetch_svg.sh "https://github-profile-trophy.vercel.app/?username=MohammedYessineKraiem&theme=onedark&no-bg=true&margin-w=8&margin-h=8&column=4" assets/generated/trophy-dark.svg
+
+      - name: Remove helper script
+        run: rm -f fetch_svg.sh
 
       - name: Commit generated assets
         run: |

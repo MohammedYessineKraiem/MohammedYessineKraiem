@@ -73,7 +73,7 @@
 <!--GUESTBOOK:START-->
 <div align="center">
 
-**Guestbook** — [leave a note &#8594;](https://github.com/MohammedYessineKraiem/MohammedYessineKraiem/issues/1)
+**Guestbook** — [leave a note &#8594;](https://github.com/MohammedYessineKraiem/MohammedYessineKraiem/issues/new?title=Guestbook)
 
 *no entries yet — be the first.*
 
