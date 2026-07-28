@@ -27,6 +27,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
           git add assets/generated/quote-light.svg assets/generated/quote-dark.svg
           git diff --staged --quiet && { echo "nothing to commit"; exit 0; }
           git commit -m "chore: rotate quote of the day [skip ci]"
