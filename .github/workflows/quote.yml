@@ -1,0 +1,32 @@
+name: Generate Quote of the Day
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # daily at midnight UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-quote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Render quote SVGs
+        run: python scripts/generate_quote.py
+
+      - name: Commit generated quote assets
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/generated/quote-light.svg assets/generated/quote-dark.svg
+          git diff --staged --quiet || git commit -m "chore: rotate quote of the day [skip ci]"
+          git push

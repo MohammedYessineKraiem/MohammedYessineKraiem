@@ -1,0 +1,38 @@
+<svg viewBox="0 0 1000 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Core Expertise">
+  <style>
+    :root { --bone: #0A0000; --rule: #4d0a0a; --muted: #540303; --dim: #451c1c; --accent: #4d0b16; --bar: #540303; --bar-glow: #4d0a0a; }
+    .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    @media (prefers-reduced-motion: reduce) { .bar { animation: none !important; } }
+  </style>
+
+  <g font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace" font-size="12" fill="var(--bone)" letter-spacing="1">
+    <text x="48" y="26">Agentic AI</text>
+    <text x="340" y="26">Full-Stack Engineering</text>
+    <text x="660" y="26">Network Security</text>
+  </g>
+
+  <g fill="var(--rule)" opacity=".3">
+    <rect x="48" y="36" width="240" height="8" rx="4"/>
+    <rect x="340" y="36" width="270" height="8" rx="4"/>
+    <rect x="660" y="36" width="260" height="8" rx="4"/>
+  </g>
+
+  <rect class="bar" x="48" y="36" width="210" height="8" rx="4" fill="var(--bar)">
+    <animate attributeName="width" values="170;210;170" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+  <rect class="bar" x="340" y="36" width="230" height="8" rx="4" fill="var(--bar-glow)">
+    <animate attributeName="width" values="180;230;180" dur="5s" repeatCount="indefinite"/>
+  </rect>
+  <rect class="bar" x="660" y="36" width="200" height="8" rx="4" fill="var(--bar)">
+    <animate attributeName="width" values="160;200;160" dur="4.8s" repeatCount="indefinite"/>
+  </rect>
+
+  <g font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace" font-size="10.5" fill="var(--muted)">
+    <text x="48" y="68">RAG &#183; agents &#183; LLM orchestration</text>
+    <text x="340" y="68">Angular &#183; Spring Boot &#183; FastAPI</text>
+    <text x="660" y="68">secure architecture &#183; defense-first</text>
+  </g>
+
+  <line x1="48" y1="86" x2="952" y2="86" stroke="var(--rule)" opacity=".3"/>
+  <text x="48" y="106" fill="var(--accent)" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace" font-size="10" letter-spacing="1.5">MEDICAL AI &#183; ENTERPRISE AI &#183; ON-PREMISE DEPLOYMENT &#183; &#201;IFFEL SCHOLAR</text>
+</svg>

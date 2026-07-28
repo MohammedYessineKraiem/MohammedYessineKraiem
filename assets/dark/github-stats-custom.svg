@@ -1,0 +1,35 @@
+<svg viewBox="0 0 1000 310" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GitHub statistics: 7 public repositories, 2 stars, 2 followers, member since 2020; languages by repository: Python 50%, PHP 17%, C 17%, HTML 17%">
+  <style>
+    :root { --bone: #EDE4DE; --rule: #6b1a1a; --muted: #c23b4a; --dim: #7a3a3a; --accent: #e0334a; }
+    .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .panel { fill: none; stroke: var(--rule); stroke-width: 1; }
+    .grow { transform: scaleX(0); transform-origin: left; animation: grow .8s cubic-bezier(.2,.7,.2,1) forwards; }
+    .g2{animation-delay:.15s}.g3{animation-delay:.3s}.g4{animation-delay:.45s}
+    @keyframes grow { to { transform: scaleX(1); } }
+    .rise { opacity: 0; animation: rise .6s ease forwards; }
+    .r1{animation-delay:.1s}.r2{animation-delay:.22s}.r3{animation-delay:.34s}.r4{animation-delay:.46s}
+    @keyframes rise { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
+    @media (prefers-reduced-motion: reduce) { .grow,.rise { animation: none; transform: none; opacity: 1; } }
+  </style>
+
+  <rect class="panel" x="24" y="20" width="456" height="270" rx="2"/>
+  <rect class="panel" x="520" y="20" width="456" height="270" rx="2"/>
+
+  <g class="mono">
+    <text fill="var(--muted)" x="52" y="58" font-size="15" font-weight="700" letter-spacing="2">GITHUB STATS</text>
+    <line x1="52" y1="72" x2="452" y2="72" stroke="var(--rule)"/>
+    <g class="rise r1"><text fill="var(--bone)" x="52" y="110" font-size="11" letter-spacing="1">PUBLIC REPOSITORIES</text><text fill="var(--accent)" x="436" y="110" font-size="13" text-anchor="end">7</text></g>
+    <g class="rise r2"><text fill="var(--bone)" x="52" y="146" font-size="11" letter-spacing="1">TOTAL STARS</text><text fill="var(--accent)" x="436" y="146" font-size="13" text-anchor="end">2</text></g>
+    <g class="rise r3"><text fill="var(--bone)" x="52" y="182" font-size="11" letter-spacing="1">FOLLOWERS</text><text fill="var(--accent)" x="436" y="182" font-size="13" text-anchor="end">2</text></g>
+    <g class="rise r4"><text fill="var(--bone)" x="52" y="218" font-size="11" letter-spacing="1">MEMBER SINCE</text><text fill="var(--accent)" x="436" y="218" font-size="13" text-anchor="end">2020</text></g>
+    <text fill="var(--dim)" x="52" y="254" font-size="9.5" letter-spacing="1">live counts &#8212; see the auto-refreshed cards below</text>
+
+    <text fill="var(--muted)" x="548" y="58" font-size="15" font-weight="700" letter-spacing="2">LANGUAGES BY REPOSITORY</text>
+    <line x1="548" y1="72" x2="948" y2="72" stroke="var(--rule)"/>
+    <text fill="var(--bone)" x="548" y="105" font-size="10">PYTHON</text><rect class="panel" x="660" y="94" width="270" height="12"/><rect class="grow" x="660" y="94" width="135" height="12" fill="var(--accent)"/><text fill="var(--muted)" x="936" y="104" font-size="9.5" text-anchor="end">50%</text>
+    <text fill="var(--bone)" x="548" y="141" font-size="10">PHP</text><rect class="panel" x="660" y="130" width="270" height="12"/><rect class="grow g2" x="660" y="130" width="45" height="12" fill="var(--muted)"/><text fill="var(--muted)" x="936" y="140" font-size="9.5" text-anchor="end">17%</text>
+    <text fill="var(--bone)" x="548" y="177" font-size="10">C</text><rect class="panel" x="660" y="166" width="270" height="12"/><rect class="grow g3" x="660" y="166" width="45" height="12" fill="var(--muted)"/><text fill="var(--muted)" x="936" y="176" font-size="9.5" text-anchor="end">17%</text>
+    <text fill="var(--bone)" x="548" y="213" font-size="10">HTML</text><rect class="panel" x="660" y="202" width="270" height="12"/><rect class="grow g4" x="660" y="202" width="45" height="12" fill="var(--muted)"/><text fill="var(--muted)" x="936" y="212" font-size="9.5" text-anchor="end">17%</text>
+    <text fill="var(--dim)" x="548" y="254" font-size="9.5" letter-spacing="1">by public repository count</text>
+  </g>
+</svg>

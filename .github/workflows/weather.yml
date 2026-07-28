@@ -1,0 +1,35 @@
+name: Generate Live Weather Card
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"   # every 3 hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-weather:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch Paris weather (wttr.in, no API key required)
+        run: curl -sL "https://wttr.in/Paris?format=j1" -o weather.json
+
+      - name: Render weather SVGs
+        run: python scripts/generate_weather.py weather.json
+
+      - name: Commit generated weather assets
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/generated/weather-light.svg assets/generated/weather-dark.svg
+          git diff --staged --quiet || git commit -m "chore: refresh live weather card [skip ci]"
+          git push

@@ -1,0 +1,42 @@
+name: Generate Extended Metrics
+
+on:
+  schedule:
+    - cron: "30 0 * * *"   # daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-metrics-light:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: assets/generated/metrics-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: MohammedYessineKraiem
+          committer_branch: main
+          config_timezone: Europe/Paris
+          config_display: classic
+          config_theme: default
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_lines: yes
+
+  generate-metrics-dark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: assets/generated/metrics-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: MohammedYessineKraiem
+          committer_branch: main
+          config_timezone: Europe/Paris
+          config_display: classic
+          config_theme: dark
+          plugin_languages: yes
+          plugin_languages_analysis_timeout: 15
+          plugin_lines: yes

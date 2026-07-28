@@ -1,0 +1,27 @@
+<svg viewBox="0 0 1000 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Now: AI Intern at AxeFinance, Eiffel Scholar, incoming TSP 2028">
+  <style>
+    :root { --bone: #EDE4DE; --rule: #6b1a1a; --accent: #e0334a; }
+    .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .belt { animation: belt 32s linear infinite; }
+    @keyframes belt { from{transform:translateX(0)} to{transform:translateX(-1420px)} }
+    @media (prefers-reduced-motion: reduce) { .belt { animation: none; } }
+  </style>
+  <defs>
+    <linearGradient id="fl" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#0d1117" stop-opacity="1"/><stop offset="1" stop-color="#0d1117" stop-opacity="0"/></linearGradient>
+    <linearGradient id="fr" x1="1" x2="0" y1="0" y2="0"><stop offset="0" stop-color="#0d1117" stop-opacity="1"/><stop offset="1" stop-color="#0d1117" stop-opacity="0"/></linearGradient>
+    <mask id="ml"><rect width="52" height="64" fill="url(#fl)"/></mask>
+    <mask id="mr"><rect x="948" width="52" height="64" fill="url(#fr)"/></mask>
+  </defs>
+  <line x1="0" y1="0.5" x2="1000" y2="0.5" stroke="var(--rule)"/>
+  <line x1="0" y1="63.5" x2="1000" y2="63.5" stroke="var(--rule)"/>
+  <g class="belt">
+    <text class="mono" x="60" y="38" font-size="13" letter-spacing="2">
+      <tspan fill="var(--accent)">NOW&#160;&#160;&#9656;&#160;&#160;</tspan><tspan fill="var(--bone)">AI INTERN @ AXEFINANCE</tspan><tspan fill="var(--accent)">&#160;&#160;&#160;&#10038;&#160;&#160;&#160;</tspan><tspan fill="var(--bone)">&#201;IFFEL EXCELLENCE SCHOLAR</tspan><tspan fill="var(--accent)">&#160;&#160;&#160;&#10038;&#160;&#160;&#160;</tspan><tspan fill="var(--bone)">INCOMING TSP 2028</tspan><tspan fill="var(--accent)">&#160;&#160;&#160;&#10038;&#160;&#160;&#160;</tspan><tspan fill="var(--bone)">OPEN TO INTERNSHIPS</tspan><tspan fill="var(--accent)">&#160;&#160;&#160;&#10038;&#160;&#160;&#160;</tspan>
+    </text>
+    <text class="mono" x="1480" y="38" font-size="13" letter-spacing="2">
+      <tspan fill="var(--accent)">NOW&#160;&#160;&#9656;&#160;&#160;</tspan><tspan fill="var(--bone)">AI INTERN @ AXEFINANCE</tspan><tspan fill="var(--accent)">&#160;&#160;&#160;&#10038;&#160;&#160;&#160;</tspan><tspan fill="var(--bone)">&#201;IFFEL EXCELLENCE SCHOLAR</tspan><tspan fill="var(--accent)">&#160;&#160;&#160;&#10038;&#160;&#160;&#160;</tspan><tspan fill="var(--bone)">INCOMING TSP 2028</tspan><tspan fill="var(--accent)">&#160;&#160;&#160;&#10038;&#160;&#160;&#160;</tspan><tspan fill="var(--bone)">OPEN TO INTERNSHIPS</tspan><tspan fill="var(--accent)">&#160;&#160;&#160;&#10038;&#160;&#160;&#160;</tspan>
+    </text>
+  </g>
+  <rect width="52" height="64" fill="#0d1117"/>
+  <rect x="948" width="52" height="64" fill="#0d1117"/>
+</svg>

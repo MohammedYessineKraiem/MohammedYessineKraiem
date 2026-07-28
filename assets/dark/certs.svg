@@ -1,0 +1,45 @@
+<svg viewBox="0 0 1000 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Certifications: Google Cloud, DataCamp x2, DeepLearning.AI, The Hashgraph Association">
+  <style>
+    :root { --bone: #EDE4DE; --rule: #6b1a1a; --muted: #c23b4a; --dim: #7a3a3a; --accent: #e0334a; }
+    .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .fade { opacity: 0; animation: fade .7s ease forwards; }
+    @keyframes fade { to { opacity: 1; } }
+    .a1{animation-delay:.1s}.a2{animation-delay:.22s}.a3{animation-delay:.34s}.a4{animation-delay:.46s}.a5{animation-delay:.58s}
+    @media (prefers-reduced-motion: reduce) { .fade { animation: none; opacity: 1; } }
+  </style>
+
+  <line x1="48" y1="40" x2="952" y2="40" stroke="var(--rule)"/>
+  <text fill="var(--muted)" class="mono" x="48" y="28" font-size="11" letter-spacing="3.5">CERTIFICATIONS</text>
+  <text fill="var(--muted)" class="mono" x="952" y="28" font-size="11" letter-spacing="3.5" text-anchor="end">FIG. 07</text>
+
+  <line x1="500" y1="64" x2="500" y2="252" stroke="var(--rule)" opacity=".4"/>
+  <line x1="48" y1="158" x2="952" y2="158" stroke="var(--rule)" opacity=".4"/>
+
+  <g class="fade a1">
+    <text fill="var(--bone)" class="mono" x="48" y="88" font-size="13.5">Introduction to Generative AI</text>
+    <text fill="var(--muted)" class="mono" x="48" y="108" font-size="11">Google Cloud &#183; Jun 2025</text>
+    <text fill="var(--dim)" class="mono" x="48" y="126" font-size="9.5">ID A79KCFYKLWCY</text>
+  </g>
+
+  <g class="fade a2">
+    <text fill="var(--bone)" class="mono" x="500" y="88" font-size="13.5" dx="52">Building APIs In Python</text>
+    <text fill="var(--muted)" class="mono" x="500" y="108" font-size="11" dx="52">DataCamp &#183; Jun 2025</text>
+    <text fill="var(--dim)" class="mono" x="500" y="126" font-size="9.5" dx="52">ID 11da05114c8d8cf4a995&#8230;</text>
+  </g>
+
+  <g class="fade a3">
+    <text fill="var(--bone)" class="mono" x="48" y="182" font-size="13.5">Python Interm&#233;diaire</text>
+    <text fill="var(--muted)" class="mono" x="48" y="202" font-size="11">DataCamp &#183; Feb 2025</text>
+    <text fill="var(--dim)" class="mono" x="48" y="220" font-size="9.5">ID ba963b8842f6f38b28a4&#8230;</text>
+  </g>
+
+  <g class="fade a4">
+    <text fill="var(--bone)" class="mono" x="500" y="182" font-size="13.5" dx="52">Supervised Learning: Regression &amp; Classification</text>
+    <text fill="var(--muted)" class="mono" x="500" y="202" font-size="11" dx="52">DeepLearning.AI &#183; Feb 2025</text>
+    <text fill="var(--dim)" class="mono" x="500" y="220" font-size="9.5" dx="52">ID GDV04LMSM4DL</text>
+  </g>
+
+  <g class="fade a5">
+    <text fill="var(--bone)" class="mono" x="48" y="248" font-size="12.5">Hashgraph Developer &#8212; <tspan fill="var(--muted)">The Hashgraph Association &#183; Dec 2024</tspan></text>
+  </g>
+</svg>

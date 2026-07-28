@@ -1,0 +1,9 @@
+<svg viewBox="0 0 1000 90" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GITHUB TROPHIES — refreshing on first Action run">
+  <style>
+    :root { --bone: #EDE4DE; --rule: #6b1a1a; --muted: #c23b4a; }
+    .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+  </style>
+  <rect x="0.5" y="0.5" width="999" height="89" fill="none" stroke="var(--rule)" rx="2"/>
+  <text class="mono" x="500" y="40" font-size="12" letter-spacing="2" fill="var(--muted)" text-anchor="middle">GITHUB TROPHIES</text>
+  <text class="mono" x="500" y="60" font-size="10" letter-spacing="1" fill="var(--bone)" text-anchor="middle" opacity=".6">populated by GitHub Actions on first run</text>
+</svg>

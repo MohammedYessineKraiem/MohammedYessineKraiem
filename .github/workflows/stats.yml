@@ -1,0 +1,54 @@
+name: Refresh GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Create generated directory
+        run: mkdir -p assets/generated
+
+      - name: Fetch stats card (light + dark)
+        run: |
+          curl -sL "https://github-readme-stats.vercel.app/api?username=MohammedYessineKraiem&show_icons=true&count_private=true&include_all_commits=true&bg_color=00000000&title_color=540303&text_color=0A0000&icon_color=4d0b16&border_color=4d0a0a&hide_border=false&rank_icon=github&cache_seconds=1800" -o assets/generated/stats-light.svg || true
+          curl -sL "https://github-readme-stats.vercel.app/api?username=MohammedYessineKraiem&show_icons=true&count_private=true&include_all_commits=true&bg_color=00000000&title_color=e0334a&text_color=EDE4DE&icon_color=e0334a&border_color=6b1a1a&hide_border=false&rank_icon=github&cache_seconds=1800" -o assets/generated/stats-dark.svg || true
+
+      - name: Fetch top-langs card (light + dark)
+        run: |
+          curl -sL "https://github-readme-stats.vercel.app/api/top-langs/?username=MohammedYessineKraiem&layout=compact&count_private=true&bg_color=00000000&title_color=540303&text_color=0A0000&icon_color=4d0b16&border_color=4d0a0a&hide_border=false&langs_count=8&cache_seconds=1800" -o assets/generated/top-langs-light.svg || true
+          curl -sL "https://github-readme-stats.vercel.app/api/top-langs/?username=MohammedYessineKraiem&layout=compact&count_private=true&bg_color=00000000&title_color=e0334a&text_color=EDE4DE&icon_color=e0334a&border_color=6b1a1a&hide_border=false&langs_count=8&cache_seconds=1800" -o assets/generated/top-langs-dark.svg || true
+
+      - name: Fetch activity graph (light + dark)
+        run: |
+          curl -sL "https://github-readme-activity-graph.vercel.app/graph?username=MohammedYessineKraiem&bg_color=00000000&color=540303&line=540303&point=4d0b16&area_color=451c1c&area=true&hide_border=true&custom_title=CONTRIBUTION%20TELEMETRY" -o assets/generated/activity-graph-light.svg || true
+          curl -sL "https://github-readme-activity-graph.vercel.app/graph?username=MohammedYessineKraiem&bg_color=00000000&color=e0334a&line=e0334a&point=c23b4a&area_color=6b1a1a&area=true&hide_border=true&custom_title=CONTRIBUTION%20TELEMETRY" -o assets/generated/activity-graph-dark.svg || true
+
+      - name: Fetch streak stats (light + dark)
+        run: |
+          curl -sL "https://streak-stats.demolab.com?user=MohammedYessineKraiem&background=00000000&border=4d0a0a&stroke=4d0a0a&ring=540303&fire=4d0b16&currStreakLabel=540303&sideLabels=451c1c&dates=451c1c&currStreakNum=0A0000&sideNums=0A0000&hide_border=true" -o assets/generated/streak-light.svg || true
+          curl -sL "https://streak-stats.demolab.com?user=MohammedYessineKraiem&background=00000000&border=6b1a1a&stroke=6b1a1a&ring=e0334a&fire=e0334a&currStreakLabel=e0334a&sideLabels=7a3a3a&dates=7a3a3a&currStreakNum=EDE4DE&sideNums=EDE4DE&hide_border=true" -o assets/generated/streak-dark.svg || true
+
+      - name: Fetch trophy card (light + dark)
+        run: |
+          curl -sL "https://github-profile-trophy.vercel.app/?username=MohammedYessineKraiem&theme=flat&no-bg=true&margin-w=8&margin-h=8&column=4" -o assets/generated/trophy-light.svg || true
+          curl -sL "https://github-profile-trophy.vercel.app/?username=MohammedYessineKraiem&theme=onedark&no-bg=true&margin-w=8&margin-h=8&column=4" -o assets/generated/trophy-dark.svg || true
+
+      - name: Commit generated assets
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/generated/stats-light.svg assets/generated/stats-dark.svg assets/generated/top-langs-light.svg assets/generated/top-langs-dark.svg assets/generated/activity-graph-light.svg assets/generated/activity-graph-dark.svg assets/generated/streak-light.svg assets/generated/streak-dark.svg assets/generated/trophy-light.svg assets/generated/trophy-dark.svg
+          git diff --staged --quiet || git commit -m "chore: refresh GitHub stats assets [skip ci]"
+          git push

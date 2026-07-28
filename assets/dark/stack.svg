@@ -1,0 +1,49 @@
+<svg viewBox="0 0 1000 350" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Technical stack across languages, frameworks, AI and ML, data, DevOps, and tools">
+  <style>
+    :root { --bone: #EDE4DE; --rule: #6b1a1a; --muted: #c23b4a; --dim: #7a3a3a; --accent: #e0334a; }
+    .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .rise { opacity: 0; animation: rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
+    @keyframes rise { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+    .a1{animation-delay:.1s}.a2{animation-delay:.24s}.a3{animation-delay:.38s}.a4{animation-delay:.52s}.a5{animation-delay:.66s}.a6{animation-delay:.8s}
+    @media (prefers-reduced-motion: reduce) { .rise { animation: none; opacity: 1; } }
+  </style>
+
+  <line x1="48" y1="40" x2="952" y2="40" stroke="var(--rule)"/>
+  <text fill="var(--muted)" class="mono" x="48" y="28" font-size="11" letter-spacing="3.5">TECHNICAL STACK</text>
+  <text fill="var(--muted)" class="mono" x="952" y="28" font-size="11" letter-spacing="3.5" text-anchor="end">FIG. 06</text>
+
+  <g class="rise a1">
+    <text fill="var(--dim)" class="mono" x="48" y="76" font-size="10.5" letter-spacing="2.5">LANGUAGES</text>
+    <text fill="var(--bone)" class="mono" x="200" y="76" font-size="13">C &#183; C++ &#183; Java &#183; PHP &#183; Python &#183; TypeScript &#183; JavaScript &#183; C# &#183; HTML5/CSS3</text>
+  </g>
+  <line class="rise a1" x1="48" y1="92" x2="952" y2="92" stroke="var(--rule)" opacity=".4"/>
+
+  <g class="rise a2">
+    <text fill="var(--dim)" class="mono" x="48" y="126" font-size="10.5" letter-spacing="2.5">FRAMEWORKS</text>
+    <text fill="var(--bone)" class="mono" x="200" y="126" font-size="13">Angular &#183; Spring Boot &#183; FastAPI &#183; .NET &#183; Streamlit &#183; Flask &#183; Django</text>
+  </g>
+  <line class="rise a2" x1="48" y1="142" x2="952" y2="142" stroke="var(--rule)" opacity=".4"/>
+
+  <g class="rise a3">
+    <text fill="var(--dim)" class="mono" x="48" y="176" font-size="10.5" letter-spacing="2.5">AI / ML / NLP</text>
+    <text fill="var(--bone)" class="mono" x="200" y="176" font-size="13">PyTorch &#183; TensorFlow &#183; Transformers &#183; LangGraph &#183; Ollama &#183; spaCy &#183; Whisper</text>
+  </g>
+  <line class="rise a3" x1="48" y1="192" x2="952" y2="192" stroke="var(--rule)" opacity=".4"/>
+
+  <g class="rise a4">
+    <text fill="var(--dim)" class="mono" x="48" y="226" font-size="10.5" letter-spacing="2.5">DATA</text>
+    <text fill="var(--bone)" class="mono" x="200" y="226" font-size="13">PostgreSQL/pgvector &#183; MySQL &#183; MS SQL Server &#183; ChromaDB &#183; MongoDB &#183; Redis</text>
+  </g>
+  <line class="rise a4" x1="48" y1="242" x2="952" y2="242" stroke="var(--rule)" opacity=".4"/>
+
+  <g class="rise a5">
+    <text fill="var(--dim)" class="mono" x="48" y="276" font-size="10.5" letter-spacing="2.5">DEVOPS</text>
+    <text fill="var(--bone)" class="mono" x="200" y="276" font-size="13">Docker &#183; Git &#183; Azure Pipelines &#183; Azure Repos &#183; OpenTelemetry &#183; NVIDIA CUDA</text>
+  </g>
+  <line class="rise a5" x1="48" y1="292" x2="952" y2="292" stroke="var(--rule)" opacity=".4"/>
+
+  <g class="rise a6">
+    <text fill="var(--dim)" class="mono" x="48" y="326" font-size="10.5" letter-spacing="2.5">TOOLS</text>
+    <text fill="var(--bone)" class="mono" x="200" y="326" font-size="13">Figma &#183; Postman &#183; VS Code &#183; Blender &#183; Canva &#183; GIMP &#183; Cytoscape.js</text>
+  </g>
+</svg>
