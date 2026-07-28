@@ -11,34 +11,34 @@
   </style>
 
   <line x1="48" y1="40" x2="952" y2="40" stroke="var(--rule)"/>
-  <text fill="var(--muted)" class="mono" x="48" y="28" font-size="11" letter-spacing="3.5">PROFESSIONAL EXPERIENCE</text>
-  <text fill="var(--muted)" class="mono" x="952" y="28" font-size="11" letter-spacing="3.5" text-anchor="end">FIG. 04</text>
+  <text fill="var(--muted)" class="mono" x="48" y="28" font-size="12" letter-spacing="3.5">PROFESSIONAL EXPERIENCE</text>
+  <text fill="var(--muted)" class="mono" x="952" y="28" font-size="12" letter-spacing="3.5" text-anchor="end">FIG. 04</text>
 
   <g class="rise a1">
     <circle class="pulse" cx="52" cy="72" r="3.5" fill="var(--accent)"/>
-    <text fill="var(--accent)" class="mono" x="70" y="76" font-size="10.5" letter-spacing="2">CURRENT</text>
-    <text fill="var(--bone)" class="mono" x="200" y="76" font-size="15" letter-spacing="1">AxeFinance &#8212; AI Intern</text>
-    <text fill="var(--muted)" class="mono" x="200" y="96" font-size="12">Axora: living documentation engine for the ACP platform.</text>
+    <text fill="var(--accent)" class="mono" x="70" y="76" font-size="11.5" letter-spacing="2">CURRENT</text>
+    <text fill="var(--bone)" class="mono" x="200" y="76" font-size="16.5" letter-spacing="1">AxeFinance &#8212; AI Intern</text>
+    <text fill="var(--muted)" class="mono" x="200" y="96" font-size="13">Axora: living documentation engine for the ACP platform.</text>
   </g>
   <line class="rise a1" x1="48" y1="112" x2="952" y2="112" stroke="var(--rule)" opacity=".35"/>
 
   <g class="rise a2">
-    <text fill="var(--dim)" class="mono" x="48" y="146" font-size="10.5" letter-spacing="2">JUL &#8211; SEP 2025</text>
-    <text fill="var(--bone)" class="mono" x="200" y="146" font-size="15" letter-spacing="1">CIMS &#8212; AI &amp; NLP Stage</text>
-    <text fill="var(--muted)" class="mono" x="200" y="166" font-size="12">Radiology report generation; multimodal dictation pipeline, &#8722;35% transcription errors.</text>
+    <text fill="var(--dim)" class="mono" x="48" y="146" font-size="11.5" letter-spacing="2">JUL &#8211; SEP 2025</text>
+    <text fill="var(--bone)" class="mono" x="200" y="146" font-size="16.5" letter-spacing="1">CIMS &#8212; AI &amp; NLP Stage</text>
+    <text fill="var(--muted)" class="mono" x="200" y="166" font-size="13">Radiology report generation; multimodal dictation pipeline, &#8722;35% transcription errors.</text>
   </g>
   <line class="rise a2" x1="48" y1="182" x2="952" y2="182" stroke="var(--rule)" opacity=".35"/>
 
   <g class="rise a3">
-    <text fill="var(--dim)" class="mono" x="48" y="216" font-size="10.5" letter-spacing="2">MAY &#8211; JUL 2025</text>
-    <text fill="var(--bone)" class="mono" x="200" y="216" font-size="15" letter-spacing="1">Smart Business Solution &#8212; ERP &amp; AI Stage</text>
-    <text fill="var(--muted)" class="mono" x="200" y="236" font-size="12">LLM-driven Dynamics 365 copilot with RAG, +40% response relevance.</text>
+    <text fill="var(--dim)" class="mono" x="48" y="216" font-size="11.5" letter-spacing="2">MAY &#8211; JUL 2025</text>
+    <text fill="var(--bone)" class="mono" x="200" y="216" font-size="16.5" letter-spacing="1">Smart Business Solution &#8212; ERP &amp; AI Stage</text>
+    <text fill="var(--muted)" class="mono" x="200" y="236" font-size="13">LLM-driven Dynamics 365 copilot with RAG, +40% response relevance.</text>
   </g>
   <line class="rise a3" x1="48" y1="252" x2="952" y2="252" stroke="var(--rule)" opacity=".35"/>
 
   <g class="rise a4">
-    <text fill="var(--dim)" class="mono" x="48" y="286" font-size="10.5" letter-spacing="2">MAR &#8211; APR 2025</text>
-    <text fill="var(--bone)" class="mono" x="200" y="286" font-size="15" letter-spacing="1">La Vague Bleue &#8212; Observation Stage</text>
-    <text fill="var(--muted)" class="mono" x="200" y="306" font-size="12">Enterprise ERP discovery and internal document digitization.</text>
+    <text fill="var(--dim)" class="mono" x="48" y="286" font-size="11.5" letter-spacing="2">MAR &#8211; APR 2025</text>
+    <text fill="var(--bone)" class="mono" x="200" y="286" font-size="16.5" letter-spacing="1">La Vague Bleue &#8212; Observation Stage</text>
+    <text fill="var(--muted)" class="mono" x="200" y="306" font-size="13">Enterprise ERP discovery and internal document digitization.</text>
   </g>
 </svg>

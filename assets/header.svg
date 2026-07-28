@@ -20,37 +20,37 @@
 
   <line class="draw a1" x1="48" y1="58" x2="952" y2="58" stroke="var(--rule)" stroke-width="1"/>
   <g class="fade a1">
-    <text class="mono" fill="var(--muted)" x="48" y="44" font-size="11" letter-spacing="3.5">PROFILE &#8212; INDEX N&#186; 001</text>
-    <text class="mono" fill="var(--muted)" x="952" y="44" font-size="11" letter-spacing="3.5" text-anchor="end">PARIS, FR &#8212; 48.86&#176; N</text>
+    <text class="mono" fill="var(--muted)" x="48" y="44" font-size="12" letter-spacing="3.5">PROFILE &#8212; INDEX N&#186; 001</text>
+    <text class="mono" fill="var(--muted)" x="952" y="44" font-size="12" letter-spacing="3.5" text-anchor="end">PARIS, FR &#8212; 48.86&#176; N</text>
   </g>
 
   <g class="rise a2">
-    <text fill="var(--bone)" class="mono" x="46" y="166" font-size="56" letter-spacing="-1">Mohammed Yessine</text>
-    <text fill="var(--bone)" class="mono" x="46" y="228" font-size="56" letter-spacing="-1">Kraiem</text>
+    <text fill="var(--bone)" class="mono" x="46" y="166" font-size="60" letter-spacing="-1">Mohammed Yessine</text>
+    <text fill="var(--bone)" class="mono" x="46" y="228" font-size="60" letter-spacing="-1">Kraiem</text>
   </g>
 
   <g class="fade a3">
-    <text fill="var(--muted)" class="mono rot r1" x="48" y="266" font-size="17">agentic AI &#183; RAG pipelines &#183; autonomous agents</text>
-    <text fill="var(--muted)" class="mono rot r2" x="48" y="266" font-size="17">medical AI &#183; on-premise &#183; non-negotiable reliability</text>
-    <text fill="var(--muted)" class="mono rot r3" x="48" y="266" font-size="17">full-stack &#183; Angular &#183; Spring Boot &#183; FastAPI</text>
-    <text fill="var(--muted)" class="mono rot r4" x="48" y="266" font-size="17">network security &#183; designing secure by default</text>
+    <text fill="var(--muted)" class="mono rot r1" x="48" y="266" font-size="18.5">agentic AI &#183; RAG pipelines &#183; autonomous agents</text>
+    <text fill="var(--muted)" class="mono rot r2" x="48" y="266" font-size="18.5">medical AI &#183; on-premise &#183; non-negotiable reliability</text>
+    <text fill="var(--muted)" class="mono rot r3" x="48" y="266" font-size="18.5">full-stack &#183; Angular &#183; Spring Boot &#183; FastAPI</text>
+    <text fill="var(--muted)" class="mono rot r4" x="48" y="266" font-size="18.5">network security &#183; designing secure by default</text>
   </g>
 
   <g class="fade a4">
-    <text fill="var(--dim)" class="mono" x="48" y="308" font-size="12.5" letter-spacing="1">focus  &#9656;</text>
-    <text fill="var(--accent)" class="mono" x="128" y="308" font-size="12.5" letter-spacing="1">agentic AI &#183; medical AI &#183; full-stack &#183; network security</text>
+    <text fill="var(--dim)" class="mono" x="48" y="308" font-size="13.5" letter-spacing="1">focus  &#9656;</text>
+    <text fill="var(--accent)" class="mono" x="128" y="308" font-size="13.5" letter-spacing="1">agentic AI &#183; medical AI &#183; full-stack &#183; network security</text>
   </g>
   <g class="fade a5">
-    <text fill="var(--dim)" class="mono" x="48" y="334" font-size="12.5" letter-spacing="1">open to internships &#183; collaboration &#183; open source</text>
+    <text fill="var(--dim)" class="mono" x="48" y="334" font-size="13.5" letter-spacing="1">open to internships &#183; collaboration &#183; open source</text>
   </g>
 
   <line class="draw a5" x1="48" y1="356" x2="952" y2="356" stroke="var(--rule)" stroke-width="1"/>
   <g class="fade a6">
-    <text fill="var(--muted)" class="mono" x="48" y="384" font-size="11.5" letter-spacing="3">AGENTIC AI</text>
-    <text fill="var(--accent)" class="mono" x="210" y="384" font-size="11.5">&#183;</text>
-    <text fill="var(--muted)" class="mono" x="232" y="384" font-size="11.5" letter-spacing="3">FULL-STACK</text>
-    <text fill="var(--accent)" class="mono" x="385" y="384" font-size="11.5">&#183;</text>
-    <text fill="var(--muted)" class="mono" x="407" y="384" font-size="11.5" letter-spacing="3">NETWORK SECURITY</text>
-    <text fill="var(--muted)" class="mono" x="952" y="384" font-size="11.5" letter-spacing="3" text-anchor="end">ENSI &#8594; TSP &#8212; 2024 / 2028</text>
+    <text fill="var(--muted)" class="mono" x="48" y="384" font-size="12.5" letter-spacing="3">AGENTIC AI</text>
+    <text fill="var(--accent)" class="mono" x="210" y="384" font-size="12.5">&#183;</text>
+    <text fill="var(--muted)" class="mono" x="232" y="384" font-size="12.5" letter-spacing="3">FULL-STACK</text>
+    <text fill="var(--accent)" class="mono" x="385" y="384" font-size="12.5">&#183;</text>
+    <text fill="var(--muted)" class="mono" x="407" y="384" font-size="12.5" letter-spacing="3">NETWORK SECURITY</text>
+    <text fill="var(--muted)" class="mono" x="952" y="384" font-size="12.5" letter-spacing="3" text-anchor="end">ENSI &#8594; TSP &#8212; 2024 / 2028</text>
   </g>
 </svg>

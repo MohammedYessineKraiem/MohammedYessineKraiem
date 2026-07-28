@@ -17,50 +17,50 @@
   </style>
 
   <line x1="48" y1="40" x2="1152" y2="40" stroke="var(--rule)"/>
-  <text fill="var(--muted)" class="mono" x="48" y="28" font-size="11" letter-spacing="3.5">THE ROUTE SO FAR</text>
-  <text fill="var(--muted)" class="mono" x="1152" y="28" font-size="11" letter-spacing="3.5" text-anchor="end">FIG. 03</text>
+  <text fill="var(--muted)" class="mono" x="48" y="28" font-size="12" letter-spacing="3.5">THE ROUTE SO FAR</text>
+  <text fill="var(--muted)" class="mono" x="1152" y="28" font-size="12" letter-spacing="3.5" text-anchor="end">FIG. 03</text>
 
   <line class="axis" x1="48" y1="125" x2="1158" y2="125"/>
 
   <g class="m m1">
     <circle cx="100" cy="125" r="4" fill="var(--bone)"/>
     <line x1="100" y1="121" x2="100" y2="96" stroke="var(--rule)"/>
-    <text fill="var(--accent)" class="mono" x="100" y="74" font-size="11" letter-spacing="2" text-anchor="middle">2022</text>
-    <text fill="var(--bone)" class="mono" x="100" y="90" font-size="10.5" letter-spacing="1" text-anchor="middle">FSM Monastir &#183; Math-Physique</text>
+    <text fill="var(--accent)" class="mono" x="100" y="74" font-size="12" letter-spacing="2" text-anchor="middle">2022</text>
+    <text fill="var(--bone)" class="mono" x="100" y="90" font-size="11.5" letter-spacing="1" text-anchor="middle">FSM Monastir &#183; Math-Physique</text>
   </g>
 
   <g class="m m2">
     <circle cx="330" cy="125" r="4" fill="var(--bone)"/>
     <line x1="330" y1="129" x2="330" y2="154" stroke="var(--rule)"/>
-    <text fill="var(--accent)" class="mono" x="330" y="172" font-size="11" letter-spacing="2" text-anchor="middle">2024</text>
-    <text fill="var(--bone)" class="mono" x="330" y="188" font-size="10.5" letter-spacing="1" text-anchor="middle">Rank 128 nat'l &#183; ENSI, Major de Promotion</text>
+    <text fill="var(--accent)" class="mono" x="330" y="172" font-size="12" letter-spacing="2" text-anchor="middle">2024</text>
+    <text fill="var(--bone)" class="mono" x="330" y="188" font-size="11.5" letter-spacing="1" text-anchor="middle">Rank 128 nat'l &#183; ENSI, Major de Promotion</text>
   </g>
 
   <g class="m m3">
     <circle cx="560" cy="125" r="4" fill="var(--bone)"/>
     <line x1="560" y1="121" x2="560" y2="96" stroke="var(--rule)"/>
-    <text fill="var(--accent)" class="mono" x="560" y="74" font-size="11" letter-spacing="2" text-anchor="middle">2025</text>
-    <text fill="var(--bone)" class="mono" x="560" y="90" font-size="10.5" letter-spacing="1" text-anchor="middle">AI Intern @ AxeFinance &#183; Axora</text>
+    <text fill="var(--accent)" class="mono" x="560" y="74" font-size="12" letter-spacing="2" text-anchor="middle">2025</text>
+    <text fill="var(--bone)" class="mono" x="560" y="90" font-size="11.5" letter-spacing="1" text-anchor="middle">AI Intern @ AxeFinance &#183; Axora</text>
   </g>
 
   <g class="m m4">
     <circle cx="750" cy="125" r="4" fill="var(--bone)"/>
     <line x1="750" y1="129" x2="750" y2="154" stroke="var(--rule)"/>
-    <text fill="var(--accent)" class="mono" x="750" y="172" font-size="11" letter-spacing="2" text-anchor="middle">DEC '25</text>
-    <text fill="var(--bone)" class="mono" x="750" y="188" font-size="10.5" letter-spacing="1" text-anchor="middle">AxisMed &#183; La Rabta Hospital</text>
+    <text fill="var(--accent)" class="mono" x="750" y="172" font-size="12" letter-spacing="2" text-anchor="middle">DEC '25</text>
+    <text fill="var(--bone)" class="mono" x="750" y="188" font-size="11.5" letter-spacing="1" text-anchor="middle">AxisMed &#183; La Rabta Hospital</text>
   </g>
 
   <g class="m m5">
     <circle class="ring" cx="950" cy="125" r="4" stroke="var(--accent)" fill="none"/>
     <circle class="pulse" cx="950" cy="125" r="4.5" fill="var(--accent)"/>
     <line x1="950" y1="121" x2="950" y2="96" stroke="var(--rule)"/>
-    <text fill="var(--accent)" class="mono" x="950" y="74" font-size="11" letter-spacing="2" text-anchor="middle">NOW</text>
-    <text fill="var(--bone)" class="mono" x="950" y="90" font-size="10.5" letter-spacing="1" text-anchor="middle">&#201;iffel Excellence Scholar</text>
+    <text fill="var(--accent)" class="mono" x="950" y="74" font-size="12" letter-spacing="2" text-anchor="middle">NOW</text>
+    <text fill="var(--bone)" class="mono" x="950" y="90" font-size="11.5" letter-spacing="1" text-anchor="middle">&#201;iffel Excellence Scholar</text>
   </g>
 
   <g class="m m6">
     <circle cx="1152" cy="125" r="3" fill="var(--dim)"/>
-    <text fill="var(--dim)" class="mono" x="1152" y="150" font-size="10" letter-spacing="2" text-anchor="end">2028 &#8594;</text>
-    <text fill="var(--dim)" class="mono" x="1152" y="172" font-size="13" text-anchor="end">incoming, T&#233;l&#233;com SudParis</text>
+    <text fill="var(--dim)" class="mono" x="1152" y="150" font-size="11" letter-spacing="2" text-anchor="end">2028 &#8594;</text>
+    <text fill="var(--dim)" class="mono" x="1152" y="172" font-size="14" text-anchor="end">incoming, T&#233;l&#233;com SudParis</text>
   </g>
 </svg>

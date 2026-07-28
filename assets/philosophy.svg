@@ -10,7 +10,7 @@
   <line x1="0" y1="63.5" x2="1000" y2="63.5" stroke="var(--rule)"/>
   <clipPath id="clip"><rect x="10" y="4" width="980" height="56"/></clipPath>
   <g clip-path="url(#clip)">
-    <g class="ticker" fill="var(--bone)" font-size="13" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace" letter-spacing="1">
+    <g class="ticker" fill="var(--bone)" font-size="14" font-family="ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace" letter-spacing="1">
       <text y="38">
         <tspan x="26">SIMPLICITY IS PREREQUISITE FOR RELIABILITY &#8212; DIJKSTRA</tspan>
         <tspan dx="50" fill="var(--accent)">&#10038;</tspan>

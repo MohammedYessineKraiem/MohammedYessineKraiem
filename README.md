@@ -82,8 +82,6 @@
 
 <div align="center">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/generated/metrics-dark.svg"/><img src="assets/generated/metrics-light.svg" width="99%" alt="Extended metrics"/></picture>
-
 <img src="https://komarev.com/ghpvc/?username=MohammedYessineKraiem&label=PROFILE+VIEWS&color=540303&style=for-the-badge&labelColor=0A0000" alt="Profile views"/>
 
 </div>

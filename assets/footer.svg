@@ -13,8 +13,8 @@
   <line class="draw" x1="48" y1="24" x2="952" y2="24"/>
   <circle class="ring" cx="60" cy="64" r="5" stroke="var(--accent)" stroke-width="1" fill="none"/>
   <circle class="dot" cx="60" cy="64" r="4" fill="var(--accent)"/>
-  <text class="mono" x="82" y="62" font-size="12" letter-spacing="3" fill="var(--bone)">STATUS &#8212; OPEN TO WORK</text>
-  <text class="mono" x="82" y="82" font-size="11" letter-spacing="2" fill="var(--muted)">internships &#183; AI engineering &#183; security-based &#183; collaboration</text>
-  <text class="mono" x="952" y="62" font-size="13" text-anchor="end" fill="var(--bone)">moyesskr@gmail.com</text>
-  <text class="mono" x="952" y="82" font-size="11" text-anchor="end" fill="var(--muted)">MYessineKr.me&#160;&#160;&#183;&#160;&#160;Paris, FR &#8592; Monastir, TN</text>
+  <text class="mono" x="82" y="62" font-size="13" letter-spacing="3" fill="var(--bone)">STATUS &#8212; OPEN TO WORK</text>
+  <text class="mono" x="82" y="82" font-size="12" letter-spacing="2" fill="var(--muted)">internships &#183; AI engineering &#183; security-based &#183; collaboration</text>
+  <text class="mono" x="952" y="62" font-size="14" text-anchor="end" fill="var(--bone)">moyesskr@gmail.com</text>
+  <text class="mono" x="952" y="82" font-size="12" text-anchor="end" fill="var(--muted)">MYessineKr.me&#160;&#160;&#183;&#160;&#160;Paris, FR &#8592; Monastir, TN</text>
 </svg>

@@ -15,10 +15,10 @@
   <line x1="0" y1="0.5" x2="1000" y2="0.5" stroke="var(--rule)"/>
   <line x1="0" y1="63.5" x2="1000" y2="63.5" stroke="var(--rule)"/>
   <g class="belt">
-    <text class="mono" x="60" y="38" font-size="13" letter-spacing="2">
+    <text class="mono" x="60" y="38" font-size="14" letter-spacing="2">
       <tspan fill="var(--accent)">NOW&#160;&#160;&#9656;&#160;&#160;</tspan><tspan fill="var(--bone)">AI INTERN @ AXEFINANCE</tspan><tspan fill="var(--accent)">&#160;&#160;&#160;&#10038;&#160;&#160;&#160;</tspan><tspan fill="var(--bone)">&#201;IFFEL EXCELLENCE SCHOLAR</tspan><tspan fill="var(--accent)">&#160;&#160;&#160;&#10038;&#160;&#160;&#160;</tspan><tspan fill="var(--bone)">INCOMING TSP 2028</tspan><tspan fill="var(--accent)">&#160;&#160;&#160;&#10038;&#160;&#160;&#160;</tspan><tspan fill="var(--bone)">OPEN TO INTERNSHIPS</tspan><tspan fill="var(--accent)">&#160;&#160;&#160;&#10038;&#160;&#160;&#160;</tspan>
     </text>
-    <text class="mono" x="1480" y="38" font-size="13" letter-spacing="2">
+    <text class="mono" x="1480" y="38" font-size="14" letter-spacing="2">
       <tspan fill="var(--accent)">NOW&#160;&#160;&#9656;&#160;&#160;</tspan><tspan fill="var(--bone)">AI INTERN @ AXEFINANCE</tspan><tspan fill="var(--accent)">&#160;&#160;&#160;&#10038;&#160;&#160;&#160;</tspan><tspan fill="var(--bone)">&#201;IFFEL EXCELLENCE SCHOLAR</tspan><tspan fill="var(--accent)">&#160;&#160;&#160;&#10038;&#160;&#160;&#160;</tspan><tspan fill="var(--bone)">INCOMING TSP 2028</tspan><tspan fill="var(--accent)">&#160;&#160;&#160;&#10038;&#160;&#160;&#160;</tspan><tspan fill="var(--bone)">OPEN TO INTERNSHIPS</tspan><tspan fill="var(--accent)">&#160;&#160;&#160;&#10038;&#160;&#160;&#160;</tspan>
     </text>
   </g>
