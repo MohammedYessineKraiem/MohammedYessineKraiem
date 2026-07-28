@@ -50,5 +50,11 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/generated/stats-light.svg assets/generated/stats-dark.svg assets/generated/top-langs-light.svg assets/generated/top-langs-dark.svg assets/generated/activity-graph-light.svg assets/generated/activity-graph-dark.svg assets/generated/streak-light.svg assets/generated/streak-dark.svg assets/generated/trophy-light.svg assets/generated/trophy-dark.svg
-          git diff --staged --quiet || git commit -m "chore: refresh GitHub stats assets [skip ci]"
-          git push
+          git diff --staged --quiet && { echo "nothing to commit"; exit 0; }
+          git commit -m "chore: refresh GitHub stats assets [skip ci]"
+          for i in 1 2 3 4 5; do
+            git push && exit 0
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+          done
+          exit 1
