@@ -1,9 +1,17 @@
-<svg viewBox="0 0 1000 90" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LIVE WEATHER — PARIS — refreshing on first Action run">
+<svg viewBox="0 0 1000 110" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Live weather in Paris: Sunny, 29°C">
   <style>
-    :root { --bone: #0A0000; --rule: #4d0a0a; --muted: #540303; }
+    :root { --bone: #0A0000; --rule: #4d0a0a; --muted: #451c1c; --accent: #540303; }
     .mono { font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .fade { opacity: 0; animation: fade .8s ease forwards; }
+    @keyframes fade { to { opacity: 1; } }
+    .pulse { animation: pulse 2.6s ease-in-out infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+    @media (prefers-reduced-motion: reduce) { .fade,.pulse { animation: none; opacity: 1; } }
   </style>
-  <rect x="0.5" y="0.5" width="999" height="89" fill="none" stroke="var(--rule)" rx="2"/>
-  <text class="mono" x="500" y="40" font-size="12" letter-spacing="2" fill="var(--muted)" text-anchor="middle">LIVE WEATHER — PARIS</text>
-  <text class="mono" x="500" y="60" font-size="10" letter-spacing="1" fill="var(--bone)" text-anchor="middle" opacity=".6">populated by GitHub Actions on first run</text>
+  <line x1="48" y1="24" x2="952" y2="24" stroke="var(--rule)"/>
+  <text class="mono fade" x="48" y="16" font-size="10.5" fill="var(--muted)" letter-spacing="3">LIVE WEATHER &#8212; PARIS, FR</text>
+  <circle class="pulse" cx="60" cy="66" r="4" fill="var(--accent)"/>
+  <text class="mono fade" x="82" y="72" font-size="30" fill="var(--bone)">29&#176;C</text>
+  <text class="mono fade" x="270" y="72" font-size="14" fill="var(--muted)">Sunny</text>
+  <text class="mono fade" x="952" y="72" font-size="11" fill="var(--muted)" text-anchor="end" letter-spacing="1">FEELS 28&#176;C &#183; HUMIDITY 33%</text>
 </svg>
