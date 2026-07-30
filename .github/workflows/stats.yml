@@ -42,13 +42,13 @@ jobs:
 
       - name: Fetch stats card (light + dark)
         run: |
-          ./fetch_svg.sh "https://github-readme-stats.vercel.app/api?username=MohammedYessineKraiem&show_icons=true&count_private=true&include_all_commits=true&bg_color=00000000&title_color=540303&text_color=0A0000&icon_color=4d0b16&border_color=4d0a0a&hide_border=false&rank_icon=github&cache_seconds=1800" assets/generated/stats-light.svg
-          ./fetch_svg.sh "https://github-readme-stats.vercel.app/api?username=MohammedYessineKraiem&show_icons=true&count_private=true&include_all_commits=true&bg_color=00000000&title_color=e0334a&text_color=EDE4DE&icon_color=e0334a&border_color=6b1a1a&hide_border=false&rank_icon=github&cache_seconds=1800" assets/generated/stats-dark.svg
+          ./fetch_svg.sh "https://github-stats-extended.vercel.app/api?username=MohammedYessineKraiem&show_icons=true&count_private=true&include_all_commits=true&bg_color=00000000&title_color=540303&text_color=0A0000&icon_color=4d0b16&border_color=4d0a0a&hide_border=false&rank_icon=github&cache_seconds=1800" assets/generated/stats-light.svg
+          ./fetch_svg.sh "https://github-stats-extended.vercel.app/api?username=MohammedYessineKraiem&show_icons=true&count_private=true&include_all_commits=true&bg_color=00000000&title_color=e0334a&text_color=EDE4DE&icon_color=e0334a&border_color=6b1a1a&hide_border=false&rank_icon=github&cache_seconds=1800" assets/generated/stats-dark.svg
 
       - name: Fetch top-langs card (light + dark)
         run: |
-          ./fetch_svg.sh "https://github-readme-stats.vercel.app/api/top-langs/?username=MohammedYessineKraiem&layout=compact&count_private=true&bg_color=00000000&title_color=540303&text_color=0A0000&icon_color=4d0b16&border_color=4d0a0a&hide_border=false&langs_count=8&cache_seconds=1800" assets/generated/top-langs-light.svg
-          ./fetch_svg.sh "https://github-readme-stats.vercel.app/api/top-langs/?username=MohammedYessineKraiem&layout=compact&count_private=true&bg_color=00000000&title_color=e0334a&text_color=EDE4DE&icon_color=e0334a&border_color=6b1a1a&hide_border=false&langs_count=8&cache_seconds=1800" assets/generated/top-langs-dark.svg
+          ./fetch_svg.sh "https://github-stats-extended.vercel.app/api/top-langs/?username=MohammedYessineKraiem&layout=compact&count_private=true&bg_color=00000000&title_color=540303&text_color=0A0000&icon_color=4d0b16&border_color=4d0a0a&hide_border=false&langs_count=8&cache_seconds=1800" assets/generated/top-langs-light.svg
+          ./fetch_svg.sh "https://github-stats-extended.vercel.app/api/top-langs/?username=MohammedYessineKraiem&layout=compact&count_private=true&bg_color=00000000&title_color=e0334a&text_color=EDE4DE&icon_color=e0334a&border_color=6b1a1a&hide_border=false&langs_count=8&cache_seconds=1800" assets/generated/top-langs-dark.svg
 
       - name: Fetch activity graph (light + dark)
         run: |
@@ -62,8 +62,8 @@ jobs:
 
       - name: Fetch trophy card (light + dark)
         run: |
-          ./fetch_svg.sh "https://github-profile-trophy.vercel.app/?username=MohammedYessineKraiem&theme=flat&no-bg=true&margin-w=8&margin-h=8&column=4" assets/generated/trophy-light.svg
-          ./fetch_svg.sh "https://github-profile-trophy.vercel.app/?username=MohammedYessineKraiem&theme=onedark&no-bg=true&margin-w=8&margin-h=8&column=4" assets/generated/trophy-dark.svg
+          ./fetch_svg.sh "https://github-profile-trophy-zeta.vercel.app/?username=MohammedYessineKraiem&theme=flat&no-bg=true&margin-w=8&margin-h=8&column=4" assets/generated/trophy-light.svg
+          ./fetch_svg.sh "https://github-profile-trophy-zeta.vercel.app/?username=MohammedYessineKraiem&theme=onedark&no-bg=true&margin-w=8&margin-h=8&column=4" assets/generated/trophy-dark.svg
 
       - name: Remove helper script
         run: rm -f fetch_svg.sh
