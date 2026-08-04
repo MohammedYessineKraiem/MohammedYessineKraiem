@@ -13,5 +13,5 @@
   <circle class="pulse" cx="60" cy="66" r="4" fill="var(--accent)"/>
   <text class="mono fade" x="82" y="72" font-size="30" fill="var(--bone)">32&#176;C</text>
   <text class="mono fade" x="270" y="72" font-size="14" fill="var(--muted)">Sunny</text>
-  <text class="mono fade" x="952" y="72" font-size="11" fill="var(--muted)" text-anchor="end" letter-spacing="1">FEELS 29&#176;C &#183; HUMIDITY 25%</text>
+  <text class="mono fade" x="952" y="72" font-size="11" fill="var(--muted)" text-anchor="end" letter-spacing="1">FEELS 30&#176;C &#183; HUMIDITY 26%</text>
 </svg>
